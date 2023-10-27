@@ -341,9 +341,9 @@ def word_cloud_all(df):
 
     comment_words = ' '
 
-    stopwords = STOPWORDS.update(["bi", "us", "j", "us02web", "silindi", "com", "www",
-                                  "ya", "ile", 'medya', 'dahil', 'edilmedi', 'zoom',
-                                  'https', "ama", "bu", "da", "mi", "gibi", "için", "ve", "de"])
+    stopwords = STOPWORDS.update(["bi", "us", "j", "us02web", "silindi", "com", "www", "bir", "mu",
+                                  "ya", "ile", 'medya', 'dahil', 'edilmedi', 'zoom', "mı", "ki",
+                                  'https', "ama", "bu", "da", "mi", "gibi", "için", "ve", "de", "ben"]) 
 
     # iterate through the DataFrame.
     for val in df.message.values:
